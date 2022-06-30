@@ -2,6 +2,8 @@ import argparse
 from sys import argv
 import socket
 
+# Group Partners: Isaac Brukhman (ivb8) and
+
 #First we use the argparse package to parse the aruments
 parser=argparse.ArgumentParser(description="""This is a very basic client program""")
 parser.add_argument('-f', type=str, help='This is the source file for the strings to reverse', default='source_strings.txt',action='store', dest='in_file')
