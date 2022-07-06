@@ -1,8 +1,8 @@
 # PA0_ReverseSocket
 Internet Tech Project 0 
 
-Partners: Isaac Brukhman and 
-RUIDs: ivb8
+Partners: Isaac Brukhman and Alex Dziemianowski
+RUIDs: ivb8 and ajd318
 
 Issues:
 - only works on localhost bc the connection is continuously refused when we try to connect.

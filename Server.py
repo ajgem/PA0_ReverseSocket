@@ -8,21 +8,22 @@ port = 5444
 server_addr = ('', port)
 s.bind(server_addr)
 s.listen(5)
-
+#create a reverse functon 
 def reverseString(strings):
   return strings[::-1]
-
+#accept the sock and addy
 clientSocket, clientAddress = s.accept()
 print('New connection:', clientAddress)
-
+#while still receiveing
 while True:
-
-    data = clientSocket.recv(512).decode("utf-8")
+#decode the data
+    data = clientSocket.recv(2048).decode("utf-8")
     print(reverseString(data))
+    #go until no more
     if not data:
         break
     clientSocket.sendall(reverseString(data).encode("utf-8"))
-    
+    #close
 clientSocket.close()
 
 
