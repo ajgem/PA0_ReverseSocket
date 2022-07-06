@@ -1,11 +1,14 @@
 import socket
-
-import sys
+import argparse
+from sys import argv
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('127.0.0.1', 6543))
+#need to bind the local name and port
+client_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_addr = (args.server_location, args.port)
+s.bind(server_addr)
 s.listen(5)
-
+#while there is a connection
 while True:
     clientSocket, clientAddress = s.accept()
     print('New connection:', clientAddress)
@@ -13,7 +16,7 @@ while True:
     message = []
     while True:
 
-        data = clientSocket.recv(2048)
+        data = clientSocket.recv(512)
         if not data:
             break
         message.append(data)
@@ -21,3 +24,4 @@ while True:
     clientSocket.sendall(b''.join(message))
     clientSocket.close()
 
+clientSocket.close()
