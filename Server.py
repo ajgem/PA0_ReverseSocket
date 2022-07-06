@@ -17,7 +17,7 @@ print('New connection:', clientAddress)
 
 while True:
 
-    data = clientSocket.recv(2048).decode("utf-8")
+    data = clientSocket.recv(512).decode("utf-8")
     print(reverseString(data))
     if not data:
         break
