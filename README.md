@@ -6,6 +6,7 @@ RUIDs: ivb8 and ajd318
 
 Issues:
 - only works on localhost bc the connection is continuously refused when we try to connect.
+- As the bind function needs both the IP and the PORT however, need the IP to open to accept so made it ''
 - Another slight issue was getting the file to close completely. This was due to an extra while true statement that we disregarded
 - Had to change the port to a parseable type due wanting it to be changeable
 
