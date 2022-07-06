@@ -1,11 +1,15 @@
 import socket
-
+import argparse 
+from sys import argv
 import sys
+
+parser=argparse.ArgumentParser(description="""This is a basic server program""")
+parser.add_argument('port', type=int, help='This is the port to connect to the server on',action='store')
+args = parser.parse_args(argv[1:])
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #need to bind the local name and port
-port = 5444
-server_addr = ('', port)
+server_addr = ('', args.port)
 s.bind(server_addr)
 s.listen(5)
 #create a reverse functon 
