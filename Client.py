@@ -2,7 +2,8 @@ import argparse
 from sys import argv
 import socket
 
-# Group Partners: Isaac Brukhman (ivb8) and
+# Partners: Isaac Brukhman and Alex Dziemianowski
+# RUIDs: ivb8 and ajd318
 
 #First we use the argparse package to parse the aruments
 parser=argparse.ArgumentParser(description="""This is a very basic client program""")
