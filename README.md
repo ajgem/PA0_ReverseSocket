@@ -7,6 +7,7 @@ RUIDs: ivb8 and ajd318
 Issues:
 - only works on localhost bc the connection is continuously refused when we try to connect.
 - Another slight issue was getting the file to close completely. This was due to an extra while true statement that we disregarded
+- Had to change the port to a parseable type due wanting it to be changeable
 
 Collaborations:
 - We collaborated with eachother when we could not get the server to work
@@ -23,6 +24,6 @@ we could only get the localhost to work
 Lessons:
 - The basics of how to work sockets interms of sending, recieving, connecting, and closing
 - Revisting the basics of Python since it's been a while
-- Learned how to decode and encode while having client use strip 
+- Learned how to decode and encode while having client use strip// this is due to the client only sending a single line
 - Understand how to send/receive data using sockets
 - Look for office hours
