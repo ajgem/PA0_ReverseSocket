@@ -3,7 +3,10 @@ import socket
 import sys
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('127.0.0.1', 5444))
+#need to bind the local name and port
+port = 5444
+server_addr = ('', port)
+s.bind(server_addr)
 s.listen(5)
 
 def reverseString(strings):
