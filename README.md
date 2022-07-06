@@ -27,6 +27,6 @@ Getting the file to close completely. This was due to an extra while true statem
 Lessons:
 - The basics of how to work sockets interms of sending, recieving, connecting, and closing
 - Revisting the basics of Python since it's been a while
-- Learned how to decode and encode while having client use strip 
+- Learned how to decode and encode while having client use strip// this is due to the client only sending a single line
 - Understand how to send/receive data using sockets
 - Look for office hours
