@@ -7,7 +7,7 @@ RUIDs: ivb8 and ajd318
 Issues:
 - Hopefully none
 
-Collaborations:
+Collaborations::
 - We collaborated with eachother when we could not get the server to work
 - Google is our best friend when it comes to socket work but we couldn't figure out why connection kept refusing 
 - Sought out python basics to undestand how to attack the problem 
